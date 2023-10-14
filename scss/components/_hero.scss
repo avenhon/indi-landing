@@ -1,0 +1,166 @@
+.hero {
+    margin-bottom: 81px;
+    padding-top: 26px;
+    background-image: url('/img/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include small-tablet {
+        margin-bottom: 59px;
+    }
+
+    @include mobile {
+        background-image: none;
+        background-color: var(--color-black);
+        padding-top: 0;
+        margin-bottom: 38px;
+    }
+
+    &__bg {
+        display: none;
+        margin-bottom: 16px;
+        min-height: 243px;
+        background-image: url('/img/hero-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @include mobile {
+            display: block;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        padding-top: 20px;
+    }
+
+    &__container {
+        padding-left: 47px;
+
+        @include small-tablet {
+            padding-left: 33px;
+        }
+    }
+
+    &__title {
+        font-family: 'Anton';
+        font-size: 80px;
+        font-weight: 400;
+        margin-bottom: 4px;
+
+        @include small-tablet {
+            font-size: 50px;
+            line-height: 73.4px;
+            margin-bottom: 1px;
+        }
+
+        @include mobile {
+            font-size: 40px;
+        }
+    }
+
+    &__category {
+        color: #747474;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 20px;
+
+        @include small-tablet {
+            font-size: 10px;
+            line-height: 19px;
+            margin-bottom: 14px;
+        }
+
+        @include mobile {
+            font-size: 8px;
+            line-height: 15px;
+            margin-bottom: 9px;
+        }
+    }
+
+    &__description {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 26px;
+        max-width: 386px;
+        margin-bottom: 24px;
+
+        @include small-tablet {
+            max-width: 283px;
+            font-size: 11px;
+            line-height: 22px;
+            margin-bottom: 16px;
+        }
+
+        @include mobile {
+            font-size: 10px;
+            line-height: 18px;
+        }
+    }
+
+    &__prodaction {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 49px;
+
+        @include small-tablet {
+            font-size: 10px;
+            line-height: 19px;
+            margin-bottom: 26px;
+        }
+
+        @include mobile {
+            font-size: 8px;
+            line-height: 15px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__button {
+        padding: 9px 18px 8px 25px;
+        border: 1px solid #ff4e4e;
+        border-radius: 40px;
+        margin-bottom: 107px;
+
+        @include small-tablet {
+            margin-bottom: 49px;
+        }
+
+        @include mobile {
+            margin-bottom: 33px;
+        }
+        
+        &--text {
+            display: flex;
+            align-items: center;
+            color: #ff4e4e;
+            font-family: 'WorkSans', sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 26px;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                background-image: url('/img/watch-icon.svg');
+                margin-right: 6px;
+            }
+
+            @include small-tablet {
+                font-size: 11px;
+                line-height: 22px;
+            }
+
+            @include mobile {
+                font-size: 10px;
+                line-height: 18px;
+            }
+        }
+    }
+}

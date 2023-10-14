@@ -1,0 +1,51 @@
+.rated {
+    margin-bottom: 132px;
+
+    @include small-tablet {
+        margin-bottom: 77px;
+    }
+
+    @include mobile {
+        margin-bottom: 92px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 22px;
+        margin-bottom: 36px;
+
+        @include small-tablet {
+            font-size: 17px;
+            margin-bottom: 28px;
+        }
+
+        @include mobile {
+            font-size: 16px;
+            margin-bottom: 22px;
+        }
+    }
+
+    &__films {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 15px 18px;
+
+        @include small-tablet {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px 10px;
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__movie {
+        display: inline-block;
+        max-width: 190px;
+        max-height: 279px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+}
